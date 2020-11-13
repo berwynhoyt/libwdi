@@ -25,9 +25,9 @@ environment:
 #    - CONFIGURATION: Debug
 #      COMPILER: MSVC
 #      PLATFORM: x64
-#    - CONFIGURATION: Release
-#      COMPILER: MSVC
-#      PLATFORM: Win32
+    - CONFIGURATION: Release
+      COMPILER: MSVC
+      PLATFORM: Win32
     - CONFIGURATION: Release
       COMPILER: MSVC
       PLATFORM: x64
@@ -53,4 +53,10 @@ build_script:
 
 artifacts:
   - path: x64\Release\examples\wdi-simple.exe
+    name: wdi-simple64.exe
   - path: x64\Release\examples\zadic.exe
+    name: zadic64.exe
+  - path: x32\Release\examples\wdi-simple.exe
+    name: wdi-simple32.exe
+  - path: x32\Release\examples\zadic.exe
+    name: zadic32.exe
